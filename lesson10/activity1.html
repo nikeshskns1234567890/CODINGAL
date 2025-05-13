@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Explorers Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        li[title] {
+            font-style: italic;
+            color: cyan;
+        }
+
+        li:nth-child(2) {
+            color: yellow;
+        }
+
+        li+li {
+            border-top: 1px solid white;
+        }
+
+        .explore-btn:hover {
+            background-color: gold;
+            color: black;
+            font-size: 1.2em;
+        }
+
+        .title::before {
+            content: "🚀 ";
+        }
+
+        .title::after {
+            content: " ✨";
+        }
+
+        div:not(.mission) {
+            border: 2px solid white;
+            padding: 10px;
+        }
+
+        p::first-letter {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="title">🌠 Space Explorers Hub</h1>
+    </header>
+
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>Join us in the search for new worlds and unexplored galaxies!</p>
+    </section>
+
+    <button class="explore-btn">Discover the Unknown</button>
+
+    <ul class="crew-list">
+        <li title="Commander">soumil</li>
+        <li title="Scientist">Dr.Nikesh</li>
+        <li title="Pilot">Lieutenant ankush sir</li>
+    </ul>
+    <div class="galaxy">
+        <p>Welcome to the galaxy!</p>
+    </div>
+
+</body>
+
+</html>
