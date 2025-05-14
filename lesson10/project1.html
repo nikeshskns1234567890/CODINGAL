@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Explorers Hub</title>
+    <title>Wildlife Explorers Hub</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            background-color: black;
+            background-color: #2e8b57;
             color: white;
             font-family: Arial, sans-serif;
             text-align: center;
@@ -16,74 +16,64 @@
 
         li[title] {
             font-style: italic;
-            color: cyan;
+            color: goldenrod;
         }
 
-        li:nth-of-type(2) {
-            color: yellow;
+        li:nth-child(2) {
+            color: rgb(51, 69, 51);
         }
 
-
-        li:not(:first-child) {
+        li+li {
             border-top: 1px solid white;
         }
 
-
         .explore-btn:hover {
-            background-color: gold;
+            background-color: darkkhaki;
             color: black;
             font-size: 1.2em;
-            cursor: pointer;
-
         }
 
-
         .title::before {
-            content: "🚀 ";
+            content: "🌿 ";
         }
 
         .title::after {
-            content: " ✨";
+            content: " 🌎";
         }
-
 
         div:not(.mission) {
-            border: 2px solid greenyellow;
+            border: 2px solid peru;
             padding: 10px;
         }
-
 
         p::first-letter {
             font-weight: bold;
             font-size: 1.8em;
         }
     </style>
-
 </head>
 
 <body>
 
     <header>
-        <h1 class="title">🌠 Space Explorers Hub</h1>
+        <h1 class="title">🐾 Wildlife Explorers Hub</h1>
     </header>
 
     <section class="mission">
         <h2>Our Mission</h2>
-        <p>Join us in the search for new worlds and unexplored galaxies!</p>
+        <p>Join us in protecting and discovering the wonders of nature!</p>
     </section>
 
-    <button class="explore-btn">Discover the Unknown</button>
+    <button class="explore-btn">Discover the Wild</button>
 
-    <ul class="crew-list">
-        <li title="Commander">Soumil</li>
-        <li title="Scientist">Dr. Nikesh</li>
-        <li title="Pilot">Lieutenant Ankush Sir</li>
+    <ul class="explorer-list">
+        <li title="Conservationist">om</li>
+        <li title="Wildlife Expert">lenin</li>
+        <li title="Nature Filmmaker">pranav</li>
     </ul>
-
-    <div class="galaxy">
-        <p>Welcome to the galaxy!</p>
+    <div class="jungle">
+        <p>Welcome to the jungle!</p>
     </div>
 
 </body>
-
 </html>
