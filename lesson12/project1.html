@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring CSS Positioning</title>
+    <style>
+        .butterfly {
+            position: static;
+            background-color: rgb(14, 198, 198);
+        }
+
+        .falcon {
+            position: fixed;
+            right: 50px;
+            top: 20px;
+            background-color: blueviolet;
+        }
+
+        .panther {
+            position: relative;
+            left: 200px;
+            top: 30px;
+            background-color: blanchedalmond;
+        }
+
+        .shadow {
+            position: absolute;
+            top: 10px;
+            left: 100px;
+            background-color: brown;
+        }
+
+        .anchor {
+            position: sticky;
+            top: 60px;
+            background-color: orange;
+        }
+
+        .fade {
+            opacity: 0.5;
+            background-color: ghostwhite;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="butterfly">"Bananas are berries, but strawberries aren’t!"</p>
+    <p class="falcon">"Water can boil and freeze at the same time under the right conditions!"</p>
+    <p class="panther">"Octopuses have three hearts, and their blood is blue!"</p>
+    <div class="panther">
+        <p class="shadow">"A teaspoon of a neutron star would weigh billions of tons!"</p>
+    </div>
+    <br>
+    <br>
+    <p class="anchor">"Your body has about 37.2 trillion cells!"</p>
+    <br>
+    <p class="fade">"There’s enough DNA in the human body to stretch from the Sun to Pluto and back—17 times!"</p>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>
