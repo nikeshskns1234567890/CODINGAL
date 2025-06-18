@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Function in JS</title>
+</head>
+
+<body>
+    <p id="multiplicationResult"></p>
+
+    <script>
+        function multiplyNumbers(a, b) {
+            return a * b;
+        }
+
+        var result1 = multiplyNumbers(5, 6);
+        var result2 = multiplyNumbers(3, 4);
+        var result3 = multiplyNumbers(7, 2);
+
+        console.log("Multiplication of 5 and 6: " + result1);
+        console.log("Multiplication of 3 and 4: " + result2);
+        console.log("Multiplication of 7 and 2: " + result3);
+
+        document.getElementById("multiplicationResult").innerHTML = "Multiplication Result: " + multiplyNumbers(8, 9);
+    </script>
+</body>
+
+</html>
