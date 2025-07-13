@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<head>
+    <title>Methods and Loops Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Methods and Loops in JavaScript</h2>
+
+    <p id="randomSet"></p>
+    <p id="roundedNumber"></p>
+    <p id="currentDate"></p>
+
+    <script>
+        let setOutput = "Random Numbers:<br>";
+        for (let i = 0; i < 5; i++) {
+            setOutput += Math.floor(Math.random() * 100) + "<br>";
+        }
+        document.getElementById("randomSet").innerHTML = setOutput;
+
+        let rawRandom = Math.random() * 50;
+        let rounded = Math.round(rawRandom);
+        document.getElementById("roundedNumber").innerHTML =
+            "Rounded Random Number: " + rounded;
+
+        let today = new Date();
+        document.getElementById("currentDate").innerHTML =
+            "Today's Date: " + today.toDateString();
+    </script>
+
+
+
+</body>
+
+</html>
