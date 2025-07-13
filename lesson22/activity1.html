@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Sum and Trigonometric Functions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    p {
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+   <h2>Sum of Arguments and Trigonometric Values</h2>
+
+  <p id="sumResult"></p>
+  <p id="trigoValues"></p>
+
+  <script>
+    function sumArguments() {
+      let sum = 0;
+      for (let i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+      }
+      return sum;
+    }
+
+    const total = sumArguments(45, 30, 25, 60);
+    document.getElementById("sumResult").innerHTML = "Sum of Arguments: " + total;
+
+    const angleInDegrees = 30;
+    const angleInRadians = angleInDegrees * (Math.PI / 180);
+
+    const sinVal = Math.sin(angleInRadians).toFixed(2);
+    const cosVal = Math.cos(angleInRadians).toFixed(2);
+    const tanVal = Math.tan(angleInRadians).toFixed(2);
+
+    document.getElementById("trigoValues").innerHTML =
+      "Trigonometric Values (for 30°):<br>" +
+      "Sin: " + sinVal + "<br>" +
+      "Cos: " + cosVal + "<br>" +
+      "Tan: " + tanVal;
+  </script>
+</body>
+</html>
+  
+</body>
+</html>
