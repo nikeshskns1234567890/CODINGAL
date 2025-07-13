@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Tinu's Favorite Colors Project</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+    }
+    h2 {
+      color: #4A90E2;
+    }
+    p {
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+    <h2>Welcome to Tinu's Info Board 🎨</h2>
+  <p id="info"></p>
+
+  <script>
+    let tinu = {
+      name: "Tinu",
+      age: 11
+    };
+
+    let favColors = ["Pink", "Blue", "Green", "Purple", "Yellow"];
+
+    function displayInfo(person, colors) {
+      let output = "Name: " + person.name + "<br>" +
+                   "Age: " + person.age + "<br>" +
+                   "First Color (index 0): " + colors[0] + "<br>" +
+                   "All Colors (joined with 🌈): " + colors.join(" 🌈 ") + "<br>";
+      
+      colors.pop();
+      output += "Updated Colors (after pop): " + colors.join(" ✨ ");
+      
+      return output;
+    }
+
+    function main() {
+      let result = displayInfo(tinu, favColors);
+      document.getElementById("info").innerHTML = result;
+    }
+
+    main();
+  </script>
+</body>
+</html>
+ 
