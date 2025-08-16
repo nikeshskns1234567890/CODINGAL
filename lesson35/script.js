@@ -86,9 +86,9 @@ operatorButtons.forEach(b => {
 
     }
 
-    })
+    )
 
-})
+}
 
 function getOperatorSymbol(id) {
     switch (id) {
